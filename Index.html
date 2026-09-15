@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareFirst Medical Clinic | Dr. Rakesh Sharma</title>
+    <style>
+        :root {
+            --primary: #0284c7;
+            --secondary: #0f172a;
+            --light: #f8fafc;
+            --accent: #22c55e;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--light);
+            color: var(--secondary);
+            line-height: 1.6;
+            padding-bottom: 70px; /* Space for sticky bottom button */
+        }
+        header {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-weight: 700;
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+        .hero {
+            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--secondary);
+        }
+        .hero p {
+            color: #475569;
+            font-size: 1rem;
+            margin-bottom: 20px;
+        }
+        .badge {
+            background: white;
+            color: var(--primary);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .section {
+            padding: 30px 20px;
+            background: white;
+            margin-top: 10px;
+        }
+        .section h2 {
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            position: relative;
+            color: var(--secondary);
+        }
+        .section h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+            margin-top: 5px;
+        }
+        .service-card {
+            background: var(--light);
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            border-left: 4px solid var(--primary);
+        }
+        .service-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .service-card p {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        .review-card {
+            background: #fff9f2;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #ffeeba;
+            margin-bottom: 15px;
+        }
+        .stars {
+            color: #f59e0b;
+            margin-bottom: 5px;
+        }
+        .review-text {
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-bottom: 5px;
+        }
+        .reviewer {
+            font-weight: 600;
+            font-size: 0.8rem;
+            color: #64748b;
+        }
+        .info-row {
+            display: flex;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+        .info-icon {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+        .sticky-btn-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 12px 20px;
+            background: white;
+            box-shadow: 0 -4px 10px rgba(0,0,0,0.08);
+            z-index: 1000;
+        }
+        .cta-button {
+            display: block;
+            background: var(--accent);
+            color: white;
+            text-align: center;
+            padding: 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 6px rgba(34, 197, 94, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">⚕️ CareFirst Clinic</div>
+    </header>
+
+    <div class="hero">
+        <span class="badge">Open Now</span>
+        <h1>Your Health Is Our Top Priority</h1>
+        <p>Expert healthcare services tailored for you and your family by Dr. Rakesh Sharma.</p>
+    </div>
+
+    <div class="section">
+        <h2>Our Services</h2>
+        <div class="service-card">
+            <h3>Consultation & General Health</h3>
+            <p>Routine checkups, seasonal flu treatment, and chronic disease management.</p>
+        </div>
+        <div class="service-card">
+            <h3>Pediatric Care</h3>
+            <p>Specialised health checkups, vaccinations, and growth monitoring for children.</p>
+        </div>
+        <div class="service-card">
+            <h3>Diagnostic & Wellness</h3>
+            <p>On-site blood sugar tracking, blood pressure monitoring, and health screenings.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Why Choose Us?</h2>
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Dr. Rakesh is incredibly patient. He explained the diagnosis clearly and didn't rush the appointment. Highly recommended!"</p>
+            <p class="reviewer">- Amit K.</p>
+        </div>
+        <div class="review-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p class="review-text">"Very clean clinic and the waiting time was minimal. Professional staff and excellent care."</p>
+            <p class="reviewer">- Sunita Rao</p>
+        </div>
+    </div>
+
+    <div class="section" style="margin-bottom: 20px;">
+        <h2>Contact & Timings</h2>
+        <div class="info-row">
+            <span class="info-icon">📍</span>
+            <div><strong>Address:</strong><br>Main Market Road, Near Central Bank, City Centre</div>
+        </div>
+        <div class="info-row">
+            <span class="info-icon">🕒</span>
+            <div><strong>Timings:</strong><br>Mon - Sat: 9:00 AM - 1:00 PM & 5:00 PM - 8:00 PM<br>Sunday: Closed</div>
+        </div>
+    </div>
+
+    <div class="sticky-btn-container">
+        <a href="tel:+919876543210" class="cta-button">📞 Call to Book Appointment</a>
+    </div>
+
+</body>
+</html>
